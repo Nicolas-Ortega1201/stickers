@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+
+
+/* ESTILOS DE LA BARRA DE NAVEGACION */
+.navbar {
+    background: rgb(231, 3, 244);
+    background: radial-gradient(circle, rgba(231, 3, 244, 1) 0%, rgba(193, 171, 174, 1) 47%, rgba(233, 254, 4, 1) 100%);
+    background-size: 200% 200%;
+    animation: cambiaColores1 4s linear infinite alternate;
+
+}
+
+.container {
+    justify-content: center !important;
+}
+
+
+
+@keyframes cambiaColores1 {
+    0% {
+        background-position: 0% 0%;
+    }
+
+
+    100% {
+        background-position: 100% 100%;
+    }
+
+}
+
+
+
+
+
+/* FIN DE LOS ESTILOS DE LA BARRA DE NAVEGACION */
+
+
+
+
+
+main {
+    background-color: rgb(211, 205, 205);
+    font-family: 'Poppins', sans-serif;
+
+}
+
+h1,
+h2 {
+    text-align: center;
+
+
+}
+
+#carrusel {
+    width: 800px;
+}
+
+
+
+
+
+/* INICIO PREGUNTAS FRECUENTES */
+.accordion-button:not(.collapsed) {
+    background: rgb(231, 3, 244);
+    background: linear-gradient(90deg, rgba(231, 3, 244, 1) 15%, rgba(218, 177, 183, 1) 53%, rgba(233, 254, 4, 1) 91%);
+    background-size: 300% 100%;
+    /* Ajusta el tamaño del fondo para que haya espacio para la animación */
+    animation: cambiaColores 4s linear infinite alternate;
+}
+
+@keyframes cambiaColores {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 100% 0%;
+    }
+
+
+}
+
+/* FIN DE SECTION PREGUNTAS PREFUENTES */
+
+
+
+
+
+
+/* INICIO FORMULARIO CONTACTO */
+.contacto {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.formulario {
+    width: 40%;
+}
+
+iframe {
+    margin-top: 32px;
+    width: 40%;
+    height: 400px;
+}
+
+/* FIN FORMULARIO CONTACTO */
+
+
+
+.whatsapp {
+    width: 50px;
+    height: auto;
+    position: fixed;
+    bottom: 80px;
+    /* Ajusta la distancia desde la parte inferior de la página */
+    right: 130px;
+    /* Ajusta la distancia desde el lado derecho de la página */
+    z-index: 1000;
+    /* Asegura que el ícono esté en la parte superior de otros elementos */
+
+    -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+    animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
+@-webkit-keyframes heartbeat {
+    from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    10% {
+        -webkit-transform: scale(0.91);
+        transform: scale(0.91);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    17% {
+        -webkit-transform: scale(0.98);
+        transform: scale(0.98);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    33% {
+        -webkit-transform: scale(0.87);
+        transform: scale(0.87);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    45% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}
+
+@keyframes heartbeat {
+    from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    10% {
+        -webkit-transform: scale(0.91);
+        transform: scale(0.91);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    17% {
+        -webkit-transform: scale(0.98);
+        transform: scale(0.98);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    33% {
+        -webkit-transform: scale(0.87);
+        transform: scale(0.87);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    45% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}
+
+
+
+
+/* INICIO DEL FOOTER */
+.tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer {
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer img {
+    margin: 10px;
+    padding: 5px;
+    width: 80px;
+}
+
+/* FIN DEL FOOTER */
